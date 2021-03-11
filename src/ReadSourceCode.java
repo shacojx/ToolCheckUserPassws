@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class ReadSourceCode {
 
-    public File folder = new File("D:\\SOURCE_UAT");
+    public File folder = new File("D:\\SOURCE_10032021");
     static String temp = "";
 
     public ArrayList<String> listFile = new ArrayList<>();
@@ -32,7 +32,8 @@ public class ReadSourceCode {
                     temp = fileEntry.getName();
                     if ((temp.substring(temp.lastIndexOf('.') + 1, temp.length()).toLowerCase()).equalsIgnoreCase("png")
                             || (temp.substring(temp.lastIndexOf('.') + 1, temp.length()).toLowerCase()).equalsIgnoreCase("jpg")
-                            || (temp.substring(temp.lastIndexOf('.') + 1, temp.length()).toLowerCase()).equalsIgnoreCase("swg")) {
+                            || (temp.substring(temp.lastIndexOf('.') + 1, temp.length()).toLowerCase()).equalsIgnoreCase("swg")
+                            || (temp.substring(temp.lastIndexOf('.') + 1, temp.length()).toLowerCase()).equalsIgnoreCase("dll")) {
 //                        System.out.println("File= " + folder.getAbsolutePath() + "\\" + fileEntry.getName());
 //                        listFile.add(folder.getAbsolutePath() + "\\" + fileEntry.getName());
 
